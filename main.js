@@ -42,6 +42,7 @@ function test() {
 
   doPost(createRequest('hoge hoge'));
   doPost(createRequest('高円寺'));
+  doPost(createRequest('高円寺 ship'));
   doPost(createRequest('高速バス'));
   doPost(createRequest('高円寺 train'));
   doPost(createRequest('35.705333,139.649826'));

@@ -53,6 +53,9 @@ function test() {
 
 function createResponseText(station) {
   var text = '';
+
+  if (station.error) return station.error;
+
   text += station.distance ? station.distance + 'm以内\t' : '';
   text += station.count ? station.count + "駅\n" : '';
   text += station.summary ? station.summary : '見つかりませんでした';

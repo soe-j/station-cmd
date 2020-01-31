@@ -11,7 +11,7 @@ function doPost(e) {
 
     // log
     if (station.error) {
-      postSlack(CHANNEL_ID, '<#' + channelName + '> : Error : ' + inputText + "\n" + station.error.Message);
+      postSlack(CHANNEL_ID, '<#' + channelName + '> : Error : ' + inputText + "\n" + text);
     } else {
       postSlack(CHANNEL_ID, '<#' + channelName + '> : OK : ' + inputText);
     }

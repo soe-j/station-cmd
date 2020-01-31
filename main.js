@@ -55,7 +55,7 @@ function test() {
 function createResponseText(station) {
   var text = '';
 
-  if (station.error) return station.error;
+  if (station.error) return station.error.Message;
 
   text += station.distance ? station.distance + 'm以内\t' : '';
   text += station.count ? station.count + "駅\n" : '';
